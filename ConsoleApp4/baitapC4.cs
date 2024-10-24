@@ -147,6 +147,8 @@ namespace ConsoleApp4
                 $"{a} x 9 = {a * 9}  \n" +
                 $"{a} x 10 = {a * 10}");
         }
+        for (int i = 1 ; i<=10 ; i++)
+{ Console.WriteLine($"{a} * {i} = {a*i}"); }
         /// <summary>
         /// viết chương trình in ra tam giác bằng số
         /// </summary>
