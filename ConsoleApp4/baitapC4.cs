@@ -135,7 +135,7 @@ namespace ConsoleApp4
         /// </summary>
         static void bai2_3()
         {
-            Console.Write("Ban muon biet ban cua chuong may? ___ "); int a = int.Parse(Console.ReadLine());
+            /*Console.Write("Ban muon biet ban cua chuong may? ___ "); int a = int.Parse(Console.ReadLine());
             Console.WriteLine($"{a} x 1 = {a * 1} \n" +
                 $"{a} x 2 = {a * 2}\n" +
                 $"{a} x 3 = {a * 3}\n" +
@@ -146,9 +146,11 @@ namespace ConsoleApp4
                 $"{a} x 8 = {a * 8}  \n" +
                 $"{a} x 9 = {a * 9}  \n" +
                 $"{a} x 10 = {a * 10}");
-        }
+        }*/
         for (int i = 1 ; i<=10 ; i++)
-{ Console.WriteLine($"{a} * {i} = {a*i}"); }
+        { 
+            Console.WriteLine($"{a} * {i} = {a*i}"); 
+        }
         /// <summary>
         /// viết chương trình in ra tam giác bằng số
         /// </summary>
@@ -170,6 +172,16 @@ namespace ConsoleApp4
   2 3
  4 5 6
 7 8 9 10");
+        Console.Write("Nhap mot so nguyen: ");
+        int n7 = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= n7; i++)
+            {
+                 for (int j = 1; j <= i; j++)
+                     {
+                        Console.Write($"{j}");
+                     }
+                 Console.WriteLine(" ");
+            }
         }
         /// <summary>
         /// in ra dãy 1+1/2+1/3+...+1/n và tổng
