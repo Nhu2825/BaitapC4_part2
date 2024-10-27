@@ -154,33 +154,71 @@ namespace ConsoleApp4
         /// <summary>
         /// viết chương trình in ra tam giác bằng số
         /// </summary>
-        static void bai2_4()
+                static void bai2_4()
         {
             Console.WriteLine(@"
+style_1
 1
 12
 123
 1234
-|
-|
+||||||||
+style_2
 1
 2 3
 4 5 6
 7 8 9 10
 ||||||||
+style_3
    1
   2 3
  4 5 6
 7 8 9 10");
-        Console.Write("Nhap mot so nguyen: ");
-        int n7 = int.Parse(Console.ReadLine());
-        for (int i = 1; i <= n7; i++)
+            Console.Write("Ban muon tao tam giac nhu the nao? (1/2/3)__"); string style = Console.ReadLine();
+            if (style.Equals("1"))
             {
-                 for (int j = 1; j <= i; j++)
-                     {
+                Console.Write("Ban muon tam giac co may dong: ");
+                int num = int.Parse(Console.ReadLine());
+                for (int i = 1; i <= num; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
                         Console.Write($"{j}");
-                     }
-                 Console.WriteLine(" ");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else if (style.Equals("2"))
+            {
+                Console.Write("Ban muon tao tam giac co may dong? _"); int n = int.Parse(Console.ReadLine());
+                int so = 1;
+                for (int i = 1; i <= n; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write($"{so}");
+                        Console.Write(" ");
+                        so++;
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.Write("Ban muon tao tam giac co may dong? _"); int a = int.Parse(Console.ReadLine());
+                int m = 1;
+                for (int i = 1; i <= a; i++)
+                {
+                    for (int k = 1; k <= a - i; k++)
+                    { Console.Write(" "); }
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write($"{m}");
+                        Console.Write(" ");
+                        m++;
+                    }
+                    Console.WriteLine();
+                }
             }
         }
         /// <summary>
